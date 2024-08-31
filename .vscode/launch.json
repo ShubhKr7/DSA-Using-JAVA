@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "googleQuestion",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.googleQuestion",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "trappingRainWater",
+      "request": "launch",
+      "mainClass": "trappingRainWater",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/WebProjects/JavaCode/leetcodeQuestions",
+      "program": "d:/WebProjects/JavaCode/leetcodeQuestions/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
