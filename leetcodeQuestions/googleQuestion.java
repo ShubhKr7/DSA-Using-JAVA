@@ -27,7 +27,7 @@ public class googleQuestion {
     }
 
     public void remove(int val){
-        System.out.println("Value to remove:"+val);
+        // System.out.println("Value to remove:"+val);
         if(list.contains(val))  list.remove(list.indexOf(val));
     }
 

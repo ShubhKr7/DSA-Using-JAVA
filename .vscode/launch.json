@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "reversedLinkedList",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.reversedLinkedList",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "googleQuestion",
       "request": "launch",
       "mainClass": "leetcodeQuestions.googleQuestion",
