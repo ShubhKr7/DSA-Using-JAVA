@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "reversePolish",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.reversePolish",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "reorderList",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.reorderList",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "reversedLinkedList",
       "request": "launch",
       "mainClass": "leetcodeQuestions.reversedLinkedList",
