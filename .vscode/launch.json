@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "topKFrequentElements",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.topKFrequentElements",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "reversePolish",
       "request": "launch",
       "mainClass": "leetcodeQuestions.reversePolish",
