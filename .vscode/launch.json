@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "subsets",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.subsets",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "longestConsecutive",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.longestConsecutive",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "topKFrequentElements",
       "request": "launch",
       "mainClass": "leetcodeQuestions.topKFrequentElements",
