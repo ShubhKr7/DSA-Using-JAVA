@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "combinationSum",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.combinationSum",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "longestSubsequence",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.longestSubsequence",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "subsets",
       "request": "launch",
       "mainClass": "leetcodeQuestions.subsets",
