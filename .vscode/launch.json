@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "removeNthNodeFromEnd",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.removeNthNodeFromEnd",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "permutations",
       "request": "launch",
       "mainClass": "leetcodeQuestions.permutations",
