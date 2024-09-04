@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "medianOfTwoSortedArrays",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.medianOfTwoSortedArrays",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "removeNthNodeFromEnd",
       "request": "launch",
       "mainClass": "leetcodeQuestions.removeNthNodeFromEnd",
