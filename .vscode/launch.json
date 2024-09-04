@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "permutations",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.permutations",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "combinationSum",
       "request": "launch",
       "mainClass": "leetcodeQuestions.combinationSum",
