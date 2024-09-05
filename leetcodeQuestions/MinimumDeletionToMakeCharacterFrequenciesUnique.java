@@ -30,6 +30,7 @@ Note that we only care about characters that are still in the string at the end
 package leetcodeQuestions;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 public class MinimumDeletionToMakeCharacterFrequenciesUnique {
     
     //Function to find unique frequencies
