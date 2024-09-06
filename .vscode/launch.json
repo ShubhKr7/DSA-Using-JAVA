@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "threeSum",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.threeSum",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "uglyNumber",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.uglyNumber",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "subsetsII",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.subsetsII",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "MinimumDeletionToMakeCharacterFrequenciesUnique",
       "request": "launch",
       "mainClass": "leetcodeQuestions.MinimumDeletionToMakeCharacterFrequenciesUnique",
