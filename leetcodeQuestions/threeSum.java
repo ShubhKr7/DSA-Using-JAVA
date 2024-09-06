@@ -32,29 +32,46 @@ import java.util.*;
 public class threeSum {
     
     public static List<List<Integer>> calc(int []nums){
+
+        //Using a HashSet removes the TLE Error
         Set<List<Integer>>res=new HashSet<>();
+
+        //Sorting the Array
         Arrays.sort(nums);
+
+        //Iterating for each element
         for(int i=0; i<nums.length; i+=1){
+
+            //Skipping for the same elements
             if(i!=0&&nums[i]==nums[i-1]) continue;
+
+            //Taking two more pointers one at last and one from next of current iterating element
             int p=i+1,q=nums.length-1;
-            if(i==p||p==q) break;
+
+            //Running while loop to find next 2 elements of triplet
             while(p<q){
+
+            //If found add to HashSet
             if((nums[i]+nums[p]+nums[q])==0){
-                // ArrayList<Integer> list = new ArrayList<>();
-                // list.add(nums[i]);
-                // list.add(nums[q]);
-                // list.add(nums[p]);
-                // if(!res.contains(list))
                 res.add(Arrays.asList(nums[i],nums[p],nums[q]));
+
+                //And increase both pointers by one
                 p+=1;q-=1;
             }
+
+            //If the sum is less than 0 then increase the left pointer as it is on smaller side so it can increase the sum value
             else if((nums[i]+nums[p]+nums[q])<0) p+=1;
+
+            //If sum if greater than 0 then decrease the right pointer as it is on the larger side so it can decrease the sum
             else q-=1;
             }
         }
+
+            //Return the answer as an ArrayList
             return new ArrayList<>(res);
         }
 
+    //Main Function
     public static void main(String[] args) {
         int nums[]={-4,0,1,-1,-1,2,3};
         List<List<Integer>>res=calc(nums);
