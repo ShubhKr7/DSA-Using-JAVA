@@ -34,7 +34,7 @@ public class uglyNumber{
     }
 
     public static void checkFactors(ArrayList<Integer>list, int n){
-        for(int i=2; i<=n; i+=1){
+        for(int i=2; i<=n/2; i+=1){
             if(n%i==0)
                 if(isPrime(i)) 
                     list.add(i);
@@ -42,7 +42,7 @@ public class uglyNumber{
     }
 
     public static boolean isPrime(int n){
-        for(int i=2; i<n; i+=1)
+        for(int i=2; i<=n/2; i+=1)
         if(n%i==0) return false;
         return true;
     }
