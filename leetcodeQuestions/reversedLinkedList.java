@@ -43,8 +43,8 @@ public class reversedLinkedList {
             reversedLinkedList obj = new reversedLinkedList();
 
             //Making an object of subclass ListNode and forming a linked list as well
-            // ListNode list = obj.new ListNode(1, obj.new ListNode(2, obj.new ListNode(3, obj.new ListNode(4, obj.new ListNode(5)))));
-            ListNode list=obj.new ListNode();
+            ListNode list = obj.new ListNode(1, obj.new ListNode(2, obj.new ListNode(3, obj.new ListNode(4, obj.new ListNode(5)))));
+            // ListNode list=obj.new ListNode();
 
             //Printing the linked list
             System.out.println("Original Linked List is:");

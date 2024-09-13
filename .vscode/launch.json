@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "largestOddNumberInAString",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.largestOddNumberInAString",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "LongestRepeatingCharacterReplacement",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.LongestRepeatingCharacterReplacement",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "threeSum",
       "request": "launch",
       "mainClass": "leetcodeQuestions.threeSum",
