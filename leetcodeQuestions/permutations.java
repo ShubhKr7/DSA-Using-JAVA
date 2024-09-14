@@ -65,7 +65,7 @@ public class permutations {
 
     //main function
     public static void main(String[] args) {
-        int nums[]={1,2};
+        int nums[]={1,2,3};
         List<List<Integer>> res=permute(nums);
 
         //Displaying result
