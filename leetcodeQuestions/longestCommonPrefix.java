@@ -19,15 +19,30 @@ package leetcodeQuestions;
 import java.util.*;
 public class longestCommonPrefix {
     
+    //Function to find the common prefix
     public static String prefix(String s[]){
-        Arrays.sort(s); String res=""; 
+
+        //Sort the strings lexographically
+        Arrays.sort(s); 
+        
+        //Res to store result
+        String res=""; 
+
+        //Iterate over first and last string till shorter one is exhausted or diffrerent character is obtained
         for(int i=0; i<(s[0].length()<s[s.length-1].length()?s[0].length():s[s.length-1].length()); i+=1){
+
+            //If different character is encountered then break
             if(s[0].charAt(i)!=s[s.length-1].charAt(i))  break;
+
+            //else add the common character to result
             res+=s[0].charAt(i);
         }
+
+        //return result
         return res;
     }
 
+    //Main function
     public static void main(String[] args) {
         // String s[]={"flower","flow","flight"};
         // String s[]={"dog","racecar","car"};
