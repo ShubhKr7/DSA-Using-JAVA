@@ -32,21 +32,36 @@ import java.util.HashSet;
 
 public class duplicateNumber {
 
+    //Function to check duplicate elements
     public static int duplicate(int []nums){
+
+        //A HashSet to store elements in O(1)
         HashSet<Integer> list = new HashSet<>();
+
+        //Iterating for each element
         for(int i: nums){
+
+            //Checking if HashSet contains i in O(1) if yes then return that value
             if(list.contains(i)) return i;
+
+            //Else add that value in HashSet
             list.add(i);
         }
 
+        //A necessary return statement
         return 0;
-
     }
     
-
+    //Main Function
     public static void main(String[] args) {
+
+        //Array with elements
         int nums[]={1,4,3,5,6,7,1};
+
+        //Function call
         int res=duplicate(nums);
+
+        //Printing result
         System.out.println("Res:"+res);
     }
 }
