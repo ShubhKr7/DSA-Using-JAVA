@@ -39,7 +39,7 @@ public class removeNthNodeFromEnd {
         //Using r to find size of list
         ListNode r = head;
         
-        //Rmoving last node
+        //Romving last node
         if(n==1){
             while(p.next.next!=null)
             p=p.next;

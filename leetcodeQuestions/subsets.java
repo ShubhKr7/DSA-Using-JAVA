@@ -30,14 +30,19 @@ public class subsets {
 
     //Recursive function to find all the possible subsets
     public static void recur(List<List<Integer>> res, ArrayList<Integer>list, int []nums, int n){
+        
         //Adding list to result list
         res.add(new ArrayList<>(list));
+        
         //Iterating from next element in nums
         for(int i=n; i<nums.length; i+=1){
+        
             //adding that element to the list
             list.add(nums[i]);
+        
             //Making a recursive call for next element
             recur(res,list, nums, i+1);
+        
             //Removing current added element from the list
             list.remove(list.size()-1);
         }
