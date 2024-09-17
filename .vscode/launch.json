@@ -3,6 +3,83 @@
   "configurations": [
     {
       "type": "java",
+      "name": "duplicateNumber",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.duplicateNumber",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "mergeKSortedLists",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.mergeKSortedLists",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "reverseNodesInKGroups",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.reverseNodesInKGroups",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "uncommonWords",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.uncommonWords",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "zeroAtLast",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.zeroAtLast",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "firstIndexOfAString",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.firstIndexOfAString",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "firstUniqueCharacter",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.firstUniqueCharacter",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "lengthOfLastWord",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.lengthOfLastWord",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "longestCommonPrefix",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.longestCommonPrefix",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "productOfArrayExceptSelf",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.productOfArrayExceptSelf",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
+      "name": "fourSum",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.fourSum",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "largestOddNumberInAString",
       "request": "launch",
       "mainClass": "leetcodeQuestions.largestOddNumberInAString",
