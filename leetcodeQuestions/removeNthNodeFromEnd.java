@@ -78,15 +78,12 @@ public class removeNthNodeFromEnd {
 
      //Creating a function to display the list
      public void display(ListNode head){
-        // if(head==null) System.out.print(" Empty List found ");
-        // else{
         while(head.next!=null){
             System.out.print(head.val+"->");
             head=head.next;
         }
         System.out.println(head.val);
     }
-    // }
 
     //main Function
     public static void main(String[] args) {
