@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "seacrhA2DMatrix",
+      "request": "launch",
+      "mainClass": "leetcodeQuestions.seacrhA2DMatrix",
+      "projectName": "leetcodeQuestions_d4aaeed2"
+    },
+    {
+      "type": "java",
       "name": "duplicateNumber",
       "request": "launch",
       "mainClass": "leetcodeQuestions.duplicateNumber",
