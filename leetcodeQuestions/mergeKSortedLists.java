@@ -37,7 +37,6 @@ The sum of lists[i].length will not exceed 104.
 package leetcodeQuestions;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
 public class mergeKSortedLists {
