@@ -11,6 +11,7 @@ public class reversePolish {
         for(String val:tokens){
             if(val!="+"&&val!="-"&&val!="*"&&val!="/"){
             st.push(Integer.parseInt(val));
+
             //if number inserted then continue to next value
             continue;}
             
@@ -22,6 +23,7 @@ public class reversePolish {
             else if(val=="-") cal=digit2-digit1;
             else if(val=="*") cal=digit1*digit2;
             else if(val=="/") cal=digit2/digit1;
+
             //Pushing answer into the stack
             st.push(cal);
         }
@@ -31,6 +33,7 @@ public class reversePolish {
 
     //Main function
     public static void main(String[] args) {
+        
         //Making an array of strings
         String tokens[]={"2","1","+","3","*"};
 
