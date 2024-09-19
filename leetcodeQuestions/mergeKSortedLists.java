@@ -50,8 +50,11 @@ public class mergeKSortedLists {
         ListNode(int val, ListNode next){this.val=val; this.next=next;}
     }
 
+    //Function to merge lists
     public static ListNode merge(ListNode []lists){
         ArrayList<Integer> list =new ArrayList<>();
+
+        //Storing elements of linked list in an arraylist
         for(ListNode i:lists){
             ListNode p = i;
             while(p!=null){
@@ -59,22 +62,31 @@ public class mergeKSortedLists {
                 p=p.next;
             }
         }
+
+        //Sorting the list using collections framework
         Collections.sort(list);
+
+        //Making necessary objects
         mergeKSortedLists obj = new mergeKSortedLists();
         ListNode dummyHead = obj.new ListNode();
         ListNode tail = dummyHead;
+
+        //Taking an index to iterate over the list
         int k=0;
+
+        //Iterating over the list
         while(k<=list.size()-1){
+
+            //Adding new node to the list
             ListNode newNode = obj.new ListNode(list.get(k));
             tail.next=newNode;
             tail=tail.next;
             k+=1;
         }
+
+        //Returning head of new list
         return dummyHead.next;
-
     }
-
-
 
     //Creating a function to display the list
     public static void display(ListNode head){
