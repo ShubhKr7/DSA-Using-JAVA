@@ -20,7 +20,6 @@ There may exists other ways to achieve this answer too.
  */
 
 package leetcodeQuestions;
-
 public class LongestRepeatingCharacterReplacement {
     
     public static int replace(String s, int k){
