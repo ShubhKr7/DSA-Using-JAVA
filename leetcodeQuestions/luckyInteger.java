@@ -31,7 +31,7 @@ import java.util.*;
 public class luckyInteger {
     
     //Function to find lucky number
-    public static int lucky(int []arr){
+    public static int lucky1(int []arr){
 
         //Creating a Hashmap to store frequency of a number
         HashMap<Integer,Integer> map=new HashMap<>();
@@ -64,10 +64,34 @@ public class luckyInteger {
         return -1;
     }
 
+    //Another Solution [Better one]
+    public static int lucky2(int []nums){
+
+        //Create an array to store frequency of each element
+        int a[]=new int[501];
+
+        //Set all frequencies to -1
+        for(int i=0;i<500; i+=1) 
+            a[i]=-1;
+
+        //adding the frequencies of each element
+        for(int i=0; i<nums.length; i+=1) 
+            a[nums[i]]+=1;
+        
+        //Searching for a lucky number from the end as we have to return the largest lucky number
+        for(int i=500; i>-1; i-=1) 
+            if(a[i]==i-1&&i>0) 
+                return i;
+
+        //If no lucky number found then return -1
+        return -1;
+    }
+
     //Main Function
     public static void main(String[] args) {
-        // int nums[]={1,2,2,3,3,3};
-        int []nums={2,2,2,3,3};
-        System.out.println(lucky(nums));
+        int nums[]={1,2,2,3,3,3};
+        // int []nums={2,2,2,3,3};
+        // System.out.println(lucky1(nums));
+        System.out.println(lucky2(nums));
     }
 }
