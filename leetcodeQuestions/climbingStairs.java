@@ -53,15 +53,19 @@ public class climbingStairs {
     }
 
     //Recursve solution gives TLE
-    public static int recur(int n){
-        if(n<0) return 0;
-        if(n==0) return 1;
-        return recur(n-1)+recur(n-2);
+    public static int recur(int n, int []arr){
+        if(n<0) return arr[0]=0;
+        if(n==0) return arr[n]=1;
+        if(arr[n]!=-1) return arr[n];
+        return arr[n]=recur(n-1,arr)+recur(n-2,arr);
     }
 
     //Main Function
     public static void main(String[] args) {
-        int n=3;
-        System.out.println(f(n));
+        int n=1000;
+        int arr[]=new int[n+1];
+        for(int i=0;i<n+1; i+=1) arr[i]=-1; 
+        // System.out.println(f(n));
+        System.out.println(recur(n,arr));
     }
 }
