@@ -65,8 +65,8 @@ public class binaryTreeInorderTraversal {
                         return null;
                     }
                     TreeNode root=new TreeNode(nums[idx]);
-                    root.left=insert(nums, idx+1);
-                    root.right=insert(nums, idx+2);
+                    root.left=insert(nums, 2*idx+1);
+                    root.right=insert(nums, 2*idx+2);
                     return root;
                 }
 
@@ -75,12 +75,12 @@ public class binaryTreeInorderTraversal {
     public static void main(String[] args) {
 
         //Making an array which contains -1 for null values and node values
-        int nums[]={1,-1,2,3};
+        int nums[]={1,-1,2,3,-1};
 
         //making a binary tree
         TreeNode root=insert(nums, 0);
 
-        //Finding the inorder traversal and storing it in a list of lists
+        //Finding the inorder traversal and storing it in a list    
         List<Integer>res=inorderTraversal(root);
 
         //Printing result
