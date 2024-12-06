@@ -75,7 +75,7 @@ public class binaryTreeInorderTraversal {
     public static void main(String[] args) {
 
         //Making an array which contains -1 for null values and node values
-        int nums[]={1,-1,2,3,-1};
+        int nums[]={1,-1,2,-1,-1,3,-1,-1,-1,-1,-1,-1,4};
 
         //making a binary tree
         TreeNode root=insert(nums, 0);
