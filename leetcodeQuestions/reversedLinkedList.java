@@ -12,7 +12,7 @@ public class reversedLinkedList {
              ListNode(int val, ListNode next) { this.val = val; this.next = next; }
          }
 
-         //fUNCTION TO REVERSE THE LINKED LIST
+         //Function to reverse a Linked List
          public ListNode reverseList(ListNode head){
             ListNode dummyHead=new ListNode();
             ListNode tail=dummyHead;
