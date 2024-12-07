@@ -27,11 +27,11 @@ Output: []
 
 Constraints:
 k == lists.length
-0 <= k <= 104
+0 <= k <= 10^4
 0 <= lists[i].length <= 500
--104 <= lists[i][j] <= 104
+-10^4 <= lists[i][j] <= 10^4
 lists[i] is sorted in ascending order.
-The sum of lists[i].length will not exceed 104.
+The sum of lists[i].length will not exceed 10^4.
  */
 
 package leetcodeQuestions;
@@ -41,7 +41,7 @@ import java.util.Collections;
 
 public class mergeKSortedLists {
     
-    //Making a ListNode class
+    //Making a ListNode static class
     public class ListNode{
         int val;
         ListNode next;
