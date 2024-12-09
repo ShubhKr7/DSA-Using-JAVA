@@ -50,7 +50,6 @@ public class intersectionOfTwoArrays {
                     Arrays.sort(nums2);}
             }
         }
-
         else{
             Arrays.sort(nums1);
             for(int i=0; i<nums2.length; i+=1){
