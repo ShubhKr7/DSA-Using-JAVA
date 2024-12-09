@@ -63,6 +63,7 @@ public class reversedLinkedList {
             System.out.println(list.val);
          }
 
+         //Main function
          public static void main(String[] args) {
 
             //making an object of parent class
