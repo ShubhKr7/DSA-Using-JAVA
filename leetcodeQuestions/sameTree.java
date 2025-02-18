@@ -31,7 +31,7 @@ public class sameTree {
         int val; 
         TreeNode left;
         TreeNode right;
-        TreeNode(){};
+        TreeNode(){}
         TreeNode(int val){this.val=val;}
         TreeNode(int val, TreeNode left, TreeNode right){this.val=val;this.left=left;this.right=right;}
     }
@@ -40,8 +40,8 @@ public class sameTree {
     public static TreeNode insert(int []nums, int idx){
         if(idx>=nums.length||nums[idx]==-1) return null;
         TreeNode root=new TreeNode(nums[idx]);
-        root.left=insert(nums, idx+1);
-        root.right=insert(nums, idx+2);
+        root.left=insert(nums, 2*idx+1);
+        root.right=insert(nums, 2*idx+2);
         return root;
     }
 
