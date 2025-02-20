@@ -28,6 +28,9 @@ s[i] is '(', ')' or '*'.
  */
 
 package leetcodeQuestions;
+
+import java.util.Stack;
+
 public class validParenthesisString {
     
     public static boolean valid(String s){
@@ -58,9 +61,30 @@ public class validParenthesisString {
         return min==0;
     }
 
+    //This solution is not effective as it compensates a star for an open bracket even is the star is behind the open bracket
+    //This algo will return true for *( this case though it is a not valid case that is why this algorithm produces wrong answer
+    public static boolean check(String s){
+        if(s.charAt(0)==')'||s.charAt(s.length()-1)=='(') return false;
+        Stack<Character> star=new Stack<>();
+        Stack<Character> open=new Stack<>();
+        for(int i=0; i<s.length(); i+=1){
+            if(s.charAt(i)=='*') star.push(s.charAt(i));
+            else if(s.charAt(i)=='(') open.push(s.charAt(i));
+            else if(s.charAt(i)==')'){
+                if(open.isEmpty()&&star.isEmpty()) return false;
+                else if(!open.isEmpty())open.pop();
+                else if(!star.isEmpty())star.pop();
+                }
+        }
+        if(open.isEmpty()) {System.out.println("Open is empty");return true;}
+        System.out.println("star size:"+star.size()+" open size:"+open.size());
+        return open.size()<=star.size();
+    }
+
     //Main Function
     public static void main(String[] args) {
-        String s="()";
-        System.out.println(valid(s));
+        String s="(()())*(()";
+        // System.out.println(valid(s));
+        System.out.println(check(s));
     }
 }
