@@ -3,7 +3,7 @@ package leetcodeQuestions;
 public class addingSpacesToAString {
 
     static String addSpaces(String s, int []spaces){
-        String res=""; int k=0;
+        // String res=""; int k=0;
 
         //This approach is giving TLE
         // for(int i:spaces){
