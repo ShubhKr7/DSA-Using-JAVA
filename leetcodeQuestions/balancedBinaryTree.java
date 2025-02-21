@@ -42,6 +42,7 @@ public class balancedBinaryTree {
         return root;
     }
 
+    //Function to find if a tree is balanced or not
     public static boolean isBalanced(TreeNode root) {
         return height(root)!=-1;
     }
