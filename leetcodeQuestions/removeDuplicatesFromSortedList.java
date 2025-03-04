@@ -19,7 +19,6 @@ The list is guaranteed to be sorted in ascending order.
  */
 
 package leetcodeQuestions;
-
 import java.util.TreeSet;
 
 public class removeDuplicatesFromSortedList {

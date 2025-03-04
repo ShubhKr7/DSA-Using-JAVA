@@ -58,7 +58,7 @@ public class reverseLinkedListII {
             if (right>1) {r=r.next;right-=1;}
         }
         ListNode prev=head,n;
-        while(l.next!=head.next&&prev.next!=l) prev=prev.next;
+        while(prev.next!=l) prev=prev.next;
         prev.next=null;
         n=r.next;
         r.next=null;
