@@ -24,7 +24,6 @@ Constraints:
  */
 
 package leetcodeQuestions;
-import java.util.Arrays;
 public class threeSumClosest {
 
     //Find the closest sum from target
