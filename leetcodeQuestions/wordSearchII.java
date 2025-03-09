@@ -1,7 +1,7 @@
 package leetcodeQuestions;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 
 public class wordSearchII {
@@ -51,6 +51,53 @@ public class wordSearchII {
         return res;
     }
 
+    //There is another solution which is by implementing the trie data structure and it goes like this
+    static class TrieNode{
+        TrieNode links[]=new TrieNode[26];
+        String word;
+    }
+
+    static TrieNode buildTrie(String []words){
+        TrieNode root=new TrieNode();
+        for(String word:words){
+            TrieNode curr=root;
+            for(char ch:word.toCharArray()){
+                if(curr.links[ch-'a']==null) curr.links[ch-'a']=new TrieNode();
+                curr=curr.links[ch-'a'];
+            }
+            curr.word=word;
+        }
+        return root;
+    }
+
+    static List<String> possible(char[][]mat, String []words){
+        TrieNode root=buildTrie(words);
+        HashSet<String> set=new HashSet<>();
+
+        for(int i=0;i<mat.length;i+=1){
+            for(int j=0;j<mat[0].length;j+=1){
+                dfs(i,j,root,mat,set);
+            }
+        }
+        List<String> res= new ArrayList<String>(set);
+        Collections.sort(res);
+        return res;
+    }
+
+    static void dfs(int i, int j, TrieNode root, char [][]mat, HashSet<String> set){
+        if(i<0||j<0||i>mat.length-1||j>mat[0].length-1) return;
+        char ch=mat[i][j];
+        if(ch=='#'||root.links[ch-'a']==null) return;
+        root=root.links[ch-'a'];
+        if(root.word!=null) set.add(root.word);
+        mat[i][j]='#';
+        dfs(i,j+1,root,mat,set); //left
+        dfs(i, j-1, root, mat, set); //right
+        dfs(i-1, j, root, mat, set); //up
+        dfs(i+1, j, root, mat, set); //down
+        mat[i][j]=ch;
+    }
+
     
     public static void main(String[] args) {
         // char mat[][]={
@@ -66,6 +113,7 @@ public class wordSearchII {
         // System.out.println("Enter the word:");
         String word[]={"abcdefg","gfedcbaaa","eaabcdgfa","befa","dgc","ade","aaaaa"};
         // String []word={"aaaaa"};
-        System.out.println(findWords(mat,word));
+        // System.out.println(findWords(mat,word));
+        System.out.println(possible(mat, word));
     }
 }
