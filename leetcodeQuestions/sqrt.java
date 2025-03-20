@@ -30,31 +30,51 @@ public class sqrt {
     public static int calc(int x){
 
         //If x is maximum integer value then return it's pre calculated sqrt
-        if(x==Integer.MAX_VALUE) return 46340;
+        // if(x==Integer.MAX_VALUE) return 46340;
 
         //Res to store result and i to iterate 
-        int res=0; int i=1;
+        // int res=0; int i=1;
 
         //Loop till half numbers are covered coz after that there wont be any sqrt as ((x/2)+1)*((x/2)+1)>x for always
-        while(i<=((x/2)+1)){
+        // while(i<=((x/2)+1)){
 
             //If number is a perfect square
-            if((i*i)==x) return i;
+            // if((i*i)==x) return i;
 
             //if a square more than the number is obtained then the previous one is the answer
-            else if((i*i)>x) return i-1;
+            // else if((i*i)>x) return i-1;
 
             //increment i
-            else i+=1;
-        }
+            // else i+=1;
+        // }
 
         //return result
-        return res;
+        // return res;
+
+        //This is a new solution using binary search
+        int start=1,end=x;
+        while(start<=end){
+            int mid=start+(end-start)/2;
+
+            //If mid is eaclty the sqrt of x return mid
+            if(mid==x/mid) return mid;
+
+            //If mid is less than sqrt of x then the sqrt will be greater than mid
+            //So, move to the right side of mid
+            else if(mid<x/mid) start=mid+1;
+
+            //If mid is greater than sqrt of x then the sqrt will be less than mid
+            //So, move to the left side of mid
+            else end=mid-1;
+        }
+
+        //Return end as it will be the sqrt of x
+        return end;
     }
 
     //Main function
     public static void main(String[] args) {
-        int x=1;
+        int x=25;
         int res=calc(x);
         System.out.println("Res:"+res);
     }
