@@ -48,7 +48,6 @@ public class longestPalindrome {
         //That is why err is initialized to -1
         int err=-1;
         for(int i:arr) {
-            System.out.print(i+" ");
             if(i==1) err+=1;}
 
         //Check if error has more than 1 extra characters so we will remove those many character from the string to make it a palindrome
