@@ -15,7 +15,7 @@ public class wordSearchII {
         for(int i=0;i<mat.length;i+=1){
             for(int j=0;j<mat[0].length;j+=1){
                 boolean visited[][]=new boolean[mat.length][mat[0].length];
-                for(boolean[] z:visited) for(boolean val:z) val=false;
+                for(boolean[] z:visited) for(int l=0;l<z.length;l+=1) z[l]=false;
                 visited[i][j]=true;
                 res=Math.max(res,recur(mat,s,0,i,j,visited));
             }
