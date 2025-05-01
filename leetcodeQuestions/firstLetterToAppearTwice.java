@@ -31,7 +31,7 @@ s has at least one repeated letter.
 
 package leetcodeQuestions;
 class firstLetterToAppearTwice {
-    public static char firstLetterToAppearTwice(String s) {
+    public static char twice(String s) {
         boolean[] seen = new boolean[26]; // Array to track seen letters
         for (char c : s.toCharArray()) {
             int index = c - 'a'; // Convert character to index (0-25)
@@ -45,7 +45,7 @@ class firstLetterToAppearTwice {
 
     public static void main(String[] args) {
         String s = "abca"; // Example input
-        char result = firstLetterToAppearTwice(s);
+        char result = twice(s);
         if (result != ' ') {
             System.out.println("The first letter to appear twice is: " + result);
         } else {
